@@ -13,3 +13,19 @@ Label(window,text = "IP Address").place(x = 40, y = 13)
 entry1 = tk.Entry (window) 
 
 canvas1.create_window(200, 20, window=entry1)
+
+
+Label(window,text = "Ports Range (x-y) ").place(x = 0, y = 38) 
+entry2 = tk.Entry (window) 
+
+canvas1.create_window(200, 50, window=entry2)
+
+frm = Frame(window)
+frm.pack(side=tk.TOP,padx = 20)
+frm.place(x=100,y=120)
+tv = ttk.Treeview(frm, columns=(1) , show = "headings", height = "5")
+tv.pack()
+tv.heading(1,text = "Data")
+
+
+hsDict = dict()
