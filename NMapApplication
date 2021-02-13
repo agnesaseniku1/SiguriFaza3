@@ -1,0 +1,15 @@
+import nmap
+import tkinter as tk
+import tksheet
+from tkinter import *
+from tkinter import ttk
+window = tk.Tk()
+window.title("Nmap port scan")
+
+canvas1 = tk.Canvas(window, width = 400, height = 300)
+canvas1.pack()
+
+Label(window,text = "IP Address").place(x = 40, y = 13) 
+entry1 = tk.Entry (window) 
+
+canvas1.create_window(200, 20, window=entry1)
