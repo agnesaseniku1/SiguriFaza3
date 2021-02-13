@@ -33,6 +33,12 @@ hsDict = dict()
 def getData():
     nm = nmap.PortScanner()
     ip = entry1.get()
+    
+    
+    button1 = tk.Button(text='Get Ports', command=getData)
+canvas1.create_window(200, 80, window=button1)
+
+window.mainloop()
     ran = entry2.get()
     nm.scan(ip, ran)
     for host in nm.all_hosts():
