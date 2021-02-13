@@ -57,3 +57,9 @@ window.mainloop()
             print(leng)
     for i in range(leng):
         tv.insert('','end',values = hsDict['ports'][i])
+
+
+button1 = tk.Button(text='Get Ports', command=getData)
+canvas1.create_window(200, 80, window=button1)
+
+window.mainloop()
